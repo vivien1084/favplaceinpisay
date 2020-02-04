@@ -1,0 +1,162 @@
+body {
+	margin: 0;
+	font-family: Helvetica;
+	font-size: 15px;
+	 color:#F0EBF4;
+	 background:#f8eee7;
+	 padding:20px;
+}
+.header{
+	padding:50px;
+	text-align:center;
+	background:#94618E;
+}
+.header h1{
+	font-size:50px;
+}
+.topnav {
+  overflow: hidden;
+  background-color:#f4decb;
+  background:  rgba(244, 222, 203, 0.6) ;
+}
+.topnav a {
+font-family:sans-serif;
+  float: left;
+  display: block;
+  outline-color:transparent;
+  letter-spacing:0.2em;
+  color: #000;
+  text-align: center;
+  padding: 20px 140.9px;
+  text-decoration: none;
+}
+.topnav a:hover {
+  color: white;
+  transition:0.5s;
+	background:  rgba(244, 222, 203, 1);
+}
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+.right{
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+.section {
+  background-color: #94618e;
+  padding: 20px;
+  margin-top: 20px;
+}
+.content{
+display:block;
+}
+.author{
+	background-color:#49274a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.component2 .event .details {
+	padding: 20px;
+	color: #fff;
+	background: #49274a;
+	width:80%;
+	
+}
+.component2 .event .details {
+	position:relative;
+	top:-80px;
+	left:40px;
+	text-align:right;
+}
+.component2 .icon img{
+	position: relative;
+	width: 110px;
+	height: 110px;
+	background: #e6b82c;
+	color: #fff;
+	border: 2px solid #f4decb;
+	border-radius: 50%;
+z-index:9;
+	/* Center align */
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.component2 .icon:nth-child(even){
+	left:50px;
+}
+
+.component2 .event .year {
+	font-size: 24px;
+	font-weight: bold;
+	color: #f4decb;
+}
+.section h1{
+	font-family:Track;
+	
+	text-align:center;
+}
+.grid{
+	display:grid;
+	grid-template-columns: auto auto;
+}
+.component2 .event:nth-child(odd) .details {
+	
+	text-align:right;
+}
+.component2 .event:nth-child(even) .details {
+	
+	text-align:left;
+}
+.grid .f:nth-child(1) .component2 .event:nth-child(odd) .details{
+	padding-left:80px;
+}
+.grid .f:nth-child(1) .component2 .event:nth-child(even) .details{
+	padding-right:80px;
+}
+.grid .f:nth-child(2) .component2 .event:nth-child(odd) .details{
+	text-align:left;
+	padding-right:80px;
+}
+.grid .f:nth-child(2) .component2 .event:nth-child(even) .details{
+	text-align:right;
+	padding-left:80px;
+}
+.grid .f:nth-child(2) .component2 .event:nth-child(odd) .icon img{
+	left:73%;
+}
+.grid .f:nth-child(1) .component2 .event:nth-child(even) .icon img{
+	left:73%;
+}
+.f{
+	width:100%;
+}
+.author{
+	padding:20px;
+	margin-top:20px;
+}
+.author h1{
+	color:#f4decb;
+}
+@media screen and (max-width: 1200px) {
+	.leftcolumn, .right {   
+    width: 100%;
+    padding: 0;
+  }
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 900px) {
+  
+  .grid{
+	  display:block;
+  }
+}
